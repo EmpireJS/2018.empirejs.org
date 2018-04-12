@@ -1,0 +1,11 @@
+{
+  "name": "2018.empirejs.org",
+  "version": "1.0.0",
+  "description": "Website for EmpireJS 2018 edition",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass empire2018.scss:empire2018.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

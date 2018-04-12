@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>EmpireJS - New York City, September 27-28, 2018</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EmpireJS is a 2 day conference is bringing the best of the Node and JavaScript worlds to NYC on September 27-28, 2018."/>
+  <link rel="stylesheet" type="text/css" href="empire2018.css">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.empirejs.org/" />
+  <meta property="og:title" content="EmpireJS - New York City, September 27-28, 2018" />
+  <meta property="og:description" content="EmpireJS is a 2 day conference is bringing the best of the Node and JavaScript worlds to NYC on September 27-28, 2018." />
+  <meta property="og:site_name" content="EmpireJS 2018" />
+  <meta property="og:image" content="http://2018.empirejs.org/img/facebook_preview_meta.png?201708" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@empirejs" />
+  <meta name="twitter:creator" content="@empirejs">
+  <meta name="twitter:title" content="EmpireJS - New York City, September 27-28, 2018" />
+  <meta name="twitter:description" content="EmpireJS is a 2 day conference is bringing the best of the Node and JavaScript worlds to NYC on September 27-28, 2018." />
+  <meta name="twitter:url" content="http://www.empirejs.org/" />
+</head>
+
+<body>
+  <div class="wrapper gray-background grid-background">
+    <div class="content">
+      <nav>
+        <ul>
+          <li class="u-uppercase u-inline-block"><a href="#about">About</a></li>
+          <li class="u-uppercase u-inline-block"><a href="#speak">Speak</a></li>
+          <li class="u-uppercase u-inline-block"><a href="#sponsor">Sponsor</a></li>
+          <li class="u-uppercase u-inline-block"><a href="#coc">Code of Conduct</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <h1>EmpireJS</h1>
+        <p class="u-uppercase">September 27+28</p>
+      </header>
+
+      <section id="about">
+        <p>Every year the Empire team ramps up, we try to <span class="text-highlight">highlight</span> one of the things that makes New York City an amazing place to live, work, visit, and git push origin master in.</p>
+        <p>This year we return to showcase the little language you know and love at the Kaye Playhouse at Hunter College this September 27 and 28.</p>
+        <p>We're so excited that we're able to feature New York at its finest, and we're really looking forward to pushing Empire, JS, and Node.js towards another incredible year.</p>
+      </section>
+
+      <section>
+        <h2>Stay up-to-date with Empire news</h2>
+        <form action="//empirejs.us8.list-manage.com/subscribe/post" method="post" target="_blank" novalidate>
+          <input type="hidden" name="u" value="db101865a07c31c476599405e">
+          <input type="hidden" name="id" value="55b168ea27">
+          <input type="email" placeholder="Enter Email Address" class="input">
+          <button type="submit" class="button u-uppercase">Subscribe</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <section>
+    <div class="map" id="map"></div>
+  </section>
+
+  <div class="wrapper yellow-background grid-background">
+    <div class="content">
+      <section id="coc">
+        <h2>Code of Conduct</h2>
+        <p>We are an inclusive, kind community that is constantly growing. We ask that you make our fellow Empire friends feel welcome! Diversity of voices is important to our community, and we are serious when we say EVERYONE AND ANYONE should attend and participate. We are committed to ensuring the conference is a place where ideas are exchanged, old friends get together, new friends meet and harassment is not tolerated. We expect speakers, attendees, organizers, and sponsor representatives to be professional and courteous to each other. We reserve the right to remove, without refund, ANY attendee (speaker or otherwise) who is unable to adhere to this policy. See our project repo for all of the details on our CoC and reporting guidelines.</p>
+        <p>If at any point you need help or to report a Code of Conduct violation we have multiple ways to contact us: Find an organizer in person, text (267) 606-0603, send a DM to <a href="http://twitter.com/empirejs">@empirejs</a> on Twitter, and/or email <a href="mailto:us@empirejs.org">us@empirejs.org</a> (however this email account may not be checked frequently during the event).</p>
+      </section>
+    </div>
+  </div>
+  <script>
+    // only show the focus ring if someone needs to see it (ref: https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2)
+    function onFirstTab(e) {
+      if (e.keyCode === 9) { // tab, the "I am a keyboard user" key
+        document.body.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', onFirstTab);
+      }
+    }
+    window.addEventListener('keydown', onFirstTab);
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2tgQiSOli6RGV60I9tZyw-hH2nDtwbFQ&callback=initMap" type="text/javascript"></script>
+  <script src="map.js"></script>
+</body>
+
+</html>

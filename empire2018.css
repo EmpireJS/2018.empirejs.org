@@ -1,0 +1,91 @@
+body {
+  font-family: 'Andale Mono';
+  color: #000;
+  margin: 0;
+  box-sizing: border-box; }
+
+body:not(.user-is-tabbing) a:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) button:focus {
+  outline: none; }
+
+.map {
+  height: 400px;
+  width: 100%; }
+
+.gray-background {
+  background-color: #eee; }
+
+.yellow-background {
+  background-color: #f8f5d7; }
+
+.grid-background {
+  background-image: linear-gradient(#ddd 1px, transparent 1px), linear-gradient(90deg, #ddd 1px, transparent 1px), linear-gradient(#ddd, 1px, transparent 1px), linear-gradient(90deg, #ddd 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px; }
+
+.u-uppercase {
+  text-transform: uppercase; }
+
+.u-inline-block {
+  display: inline-block; }
+
+.wrapper {
+  padding: 20px 0; }
+
+.content {
+  max-width: 968px;
+  margin: 0 auto; }
+
+header {
+  text-align: center; }
+
+nav {
+  height: 30px; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right; }
+
+nav li {
+  padding: 0 15px; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  background-image: linear-gradient(-100deg, #fff, #fff, #fff); }
+  a:hover {
+    background-image: linear-gradient(-100deg, #F8e71c, #F8e71c, #F8e71c); }
+
+li:nth-child(4n + 1) a, a:nth-child(4n + 1) {
+  border-radius: 20px 5px 30px 10px; }
+
+li:nth-child(4n + 2) a, a:nth-child(4n + 2) {
+  border-radius: 50px 3px 20px 8px; }
+
+li:nth-child(4n + 3) a {
+  border-radius: 10px 35px 10px 20px; }
+
+li:nth-child(4n + 4) a {
+  border-radius: 35px 10px 50px 20px; }
+
+.button {
+  border: solid 3px #000;
+  background: transparent;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  font-family: inherit; }
+
+input {
+  border: none;
+  border-bottom: solid 3px #000;
+  background: transparent;
+  padding: 5px;
+  width: 400px;
+  font-family: inherit;
+  font-size: 1em; }
+
+/*# sourceMappingURL=empire2018.css.map */
