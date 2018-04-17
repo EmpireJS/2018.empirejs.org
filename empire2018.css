@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Bitmap Sketch 3D";
+  src: url("BitmapSketch3D.ttf"); }
+@font-face {
+  font-family: "Bitmap Sketch Hatch Fill";
+  src: url("BitmapSketchHatchFill.ttf"); }
 body {
   font-family: 'Andale Mono';
   color: #000;
@@ -9,9 +15,24 @@ body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) button:focus {
   outline: none; }
 
+h1 {
+  font-family: "Bitmap Sketch 3D";
+  font-size: 8em;
+  font-weight: lighter;
+  margin-bottom: 36px; }
+
+h2 {
+  font-family: "Bitmap Sketch Hatch Fill";
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2em; }
+
 .map {
   height: 400px;
   width: 100%; }
+
+.text-section {
+  margin: 36px 0; }
 
 .gray-background {
   background-color: #eee; }
@@ -57,7 +78,7 @@ a {
   text-decoration: none;
   background-image: linear-gradient(-100deg, #fff, #fff, #fff); }
   a:hover {
-    background-image: linear-gradient(-100deg, #F8e71c, #F8e71c, #F8e71c); }
+    background-image: linear-gradient(-100deg, #f8e71c, #f8e71c, #f8e71c); }
 
 li:nth-child(4n + 1) a, a:nth-child(4n + 1) {
   border-radius: 20px 5px 30px 10px; }

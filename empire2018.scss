@@ -1,11 +1,22 @@
 $grid-color: #ddd;
 $light-gray: #eee;
+$gray: #333;
 $light-yellow: #f8f5d7;
 $yellow: #f8e71c;
 $pink: #f832af;
 $blue: #2d91c7;
 $black: #000;
 $white: #fff;
+
+@font-face {
+  font-family: "Bitmap Sketch 3D";
+  src: url("BitmapSketch3D.ttf");
+}
+
+@font-face {
+  font-family: "Bitmap Sketch Hatch Fill";
+  src: url("BitmapSketchHatchFill.ttf");
+}
 
 body {
   font-family: 'Andale Mono';
@@ -20,9 +31,32 @@ body:not(.user-is-tabbing) button:focus {
   outline: none;
 }
 
+h1 {
+  font-family: "Bitmap Sketch 3D";
+  font-size: 8em;
+  font-weight: lighter;
+  margin-bottom: 36px;
+}
+
+h2 {
+  font-family: "Bitmap Sketch Hatch Fill";
+  color: $gray;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
 .map {
   height: 400px;
   width: 100%;
+}
+
+.text-section {
+  margin: 64px 0;
 }
 
 .gray-background {
