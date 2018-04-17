@@ -25,14 +25,18 @@ h2 {
   font-family: "Bitmap Sketch Hatch Fill";
   color: #333;
   text-transform: uppercase;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
+
+form {
+  text-align: center; }
 
 .map {
   height: 400px;
   width: 100%; }
 
 .text-section {
-  margin: 36px 0; }
+  margin: 64px 0; }
 
 .gray-background {
   background-color: #eee; }
