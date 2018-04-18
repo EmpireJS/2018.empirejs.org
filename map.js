@@ -1,5 +1,5 @@
 function initMap() {
-    var latLng = new google.maps.LatLng(40.7666114, -73.9915322);
+    var latLng = new google.maps.LatLng(40.7686084, -73.967244);
     var styles = [
   {
     "elementType": "geometry",
@@ -181,7 +181,7 @@ function initMap() {
     "elementType": "geometry.fill",
     "stylers": [
       {
-        "color": "#ffeb3b"
+        "color": "#2D91C7"
       }
     ]
   },
@@ -222,32 +222,32 @@ function initMap() {
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
 
-    function addHotelMarker(title, latLng, url, map) {
-        var marker = new google.maps.Marker({
-            position: latLng,
-            map: map,
-            title: title,
-            icon: '/img/map/hotel.png',
-            animation: google.maps.Animation.DROP
-        });
-
-        // Add Click Event
-        google.maps.event.addListener(marker, 'click', function() {
-            window.location = url;
-        });
-    }
+    // function addHotelMarker(title, latLng, url, map) {
+    //     var marker = new google.maps.Marker({
+    //         position: latLng,
+    //         map: map,
+    //         title: title,
+    //         icon: '/img/map/hotel.png',
+    //         animation: google.maps.Animation.DROP
+    //     });
+    //
+    //     // Add Click Event
+    //     google.maps.event.addListener(marker, 'click', function() {
+    //         window.location = url;
+    //     });
+    // }
 
     var eventMarker = new google.maps.Marker({
         position: latLng,
         map: map,
-        title: "The New York Academy of Medicine",
-        icon: '/img/map/star.png',
+        title: 'Kaye Playhouse',
+        icon: 'scribbles/pink-small-scribble.svg',
         animation: google.maps.Animation.DROP
     });
 
     // Add Click Event for location
     google.maps.event.addListener(eventMarker, 'click', function() {
-        window.location = 'https://nyam.org/';
+        window.location = 'http://www.hunter.cuny.edu/kayeplayhouse';
     });
 
     // // Add Hotels
