@@ -241,7 +241,7 @@ function initMap() {
         position: latLng,
         map: map,
         title: 'Kaye Playhouse',
-        icon: 'scribbles/pink-small-scribble.svg',
+        icon: 'scribbles/x-scribble.svg',
         animation: google.maps.Animation.DROP
     });
 

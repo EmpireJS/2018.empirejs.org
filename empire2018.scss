@@ -1,4 +1,4 @@
-$grid-color: #ddd;
+$grid-color: #e7e7e7;
 $light-gray: #eee;
 $gray: #333;
 $light-yellow: #f8f5d7;
@@ -64,15 +64,8 @@ form {
   margin: 64px 0;
 }
 
-.gray-background {
-  background-color: $light-gray;
-}
-
-.yellow-background {
+.legal-pad-background {
   background-color: $light-yellow;
-}
-
-.grid-background {
   background-image:
     linear-gradient($grid-color 1px, transparent 1px),
     linear-gradient(90deg, $grid-color 1px, transparent 1px),
