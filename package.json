@@ -8,5 +8,5 @@
     "sass-watch": "sass --watch empire2018.scss:empire2018.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
 }

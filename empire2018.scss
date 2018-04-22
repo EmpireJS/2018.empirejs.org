@@ -19,10 +19,11 @@ $white: #fff;
 }
 
 body {
-  font-family: 'Andale Mono';
+  font-family: "Andale Mono", monospace;
   color: $black;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body:not(.user-is-tabbing) a:focus,
@@ -36,6 +37,12 @@ h1 {
   font-size: 8em;
   font-weight: lighter;
   margin-bottom: 36px;
+  margin-left: 16px;
+  margin-right: 16px;
+  
+  span {
+    display: inline-block;
+  }
 }
 
 h2 {
@@ -45,6 +52,10 @@ h2 {
   font-size: 2em;
   text-align: center;
   position: relative;
+  
+  span {
+    position: relative;
+  }
 }
 
 p {
@@ -61,7 +72,7 @@ form {
 }
 
 .text-section {
-  margin: 64px 0;
+  margin: 64px 16px;
 }
 
 .legal-pad-background {
@@ -111,6 +122,7 @@ nav ul {
 
 nav li {
   padding: 0 15px;
+  display: inline-block;
 }
 
 a {
@@ -145,12 +157,12 @@ li:nth-child(4n + 4) a {
 
 .scribble--form {
   position: absolute;
-  transform: translateX(190px);
+  transform: translateX(-8px);
 }
 
 .scribble--coc {
   position: absolute;
-  transform: translateX(318px);
+  transform: translateX(-16px);
 }
 
 .button {
@@ -160,6 +172,7 @@ li:nth-child(4n + 4) a {
   font-size: 1.5rem;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   font-family: inherit;
+  margin-top: 8px;
 
   &:hover {
     cursor: pointer;
@@ -171,11 +184,36 @@ input {
   border-bottom: solid 3px $black;
   background: transparent;
   padding: 5px;
-  width: 400px;
+  width: 50%;
   font-family: inherit;
   font-size: 1em;
 
   &::placeholder {
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 6em;
+  }
+  
+  nav ul {
+    margin-bottom: 32px;
+  }
+  
+  nav li {
+    text-align: right;
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    width: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 5em;
   }
 }

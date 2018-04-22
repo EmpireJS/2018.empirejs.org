@@ -5,10 +5,11 @@
   font-family: "Bitmap Sketch Hatch Fill";
   src: url("BitmapSketchHatchFill.ttf"); }
 body {
-  font-family: 'Andale Mono';
+  font-family: 'Andale Mono', monospace;
   color: #000;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden;}
 
 body:not(.user-is-tabbing) a:focus,
 body:not(.user-is-tabbing) input:focus,
@@ -19,7 +20,13 @@ h1 {
   font-family: "Bitmap Sketch 3D";
   font-size: 8em;
   font-weight: lighter;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  margin-left: 16px;
+  margin-right: 16px;}
+  
+h1 span {
+  display: inline-block;
+}
 
 h2 {
   font-family: "Bitmap Sketch Hatch Fill";
@@ -28,6 +35,10 @@ h2 {
   font-size: 2em;
   text-align: center;
   position: relative; }
+  
+h2 span {
+  position: relative;
+}
 
 p {
   line-height: 1.5em; }
@@ -40,7 +51,7 @@ form {
   width: 100%; }
 
 .text-section {
-  margin: 64px 0; }
+  margin: 64px 16px; }
 
 .legal-pad-background {
   background-color: #f8f5d7;
@@ -76,7 +87,8 @@ nav ul {
   float: right; }
 
 nav li {
-  padding: 0 15px; }
+  padding: 0 15px;
+  display: inline-block;}
 
 a {
   color: #000;
@@ -105,11 +117,11 @@ li:nth-child(4n + 4) a {
 
 .scribble--form {
   position: absolute;
-  transform: translateX(190px); }
+  transform: translateX(-8px); }
 
 .scribble--coc {
   position: absolute;
-  transform: translateX(318px); }
+  transform: translateX(-16px); }
 
 .button {
   border: solid 3px #000;
@@ -117,7 +129,8 @@ li:nth-child(4n + 4) a {
   padding: 5px;
   font-size: 1.5rem;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  font-family: inherit; }
+  font-family: inherit;
+  margin-top: 8px;}
   .button:hover {
     cursor: pointer; }
 
@@ -131,5 +144,30 @@ input {
   font-size: 1em; }
   input::placeholder {
     text-transform: uppercase; }
+    
+@media (max-width: 420px) {
+  h1 {
+    font-size: 6em;
+  }
+  
+  nav ul {
+    margin-bottom: 32px;
+  }
+  
+  nav li {
+    text-align: right;
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    width: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 5em;
+  }
+}
 
 /*# sourceMappingURL=empire2018.css.map */
