@@ -1,20 +1,24 @@
 @font-face {
   font-family: "Bitmap Sketch 3D";
-  src: url("BitmapSketch3D.ttf"); }
+  src: url("BitmapSketch3D.ttf");
+}
 @font-face {
   font-family: "Bitmap Sketch Hatch Fill";
-  src: url("BitmapSketchHatchFill.ttf"); }
+  src: url("BitmapSketchHatchFill.ttf");
+}
 body {
-  font-family: 'Andale Mono', monospace;
+  font-family: "Andale Mono", monospace;
   color: #000;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;}
+  overflow-x: hidden;
+}
 
 body:not(.user-is-tabbing) a:focus,
 body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) button:focus {
-  outline: none; }
+  outline: none;
+}
 
 h1 {
   font-family: "Bitmap Sketch 3D";
@@ -22,8 +26,8 @@ h1 {
   font-weight: lighter;
   margin-bottom: 36px;
   margin-left: 16px;
-  margin-right: 16px;}
-  
+  margin-right: 16px;
+}
 h1 span {
   display: inline-block;
 }
@@ -34,94 +38,117 @@ h2 {
   text-transform: uppercase;
   font-size: 2em;
   text-align: center;
-  position: relative; }
-  
+  position: relative;
+}
 h2 span {
   position: relative;
 }
 
 p {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 form {
-  text-align: center; }
+  text-align: center;
+}
 
 .map {
   height: 400px;
-  width: 100%; }
+  width: 100%;
+}
 
 .text-section {
-  margin: 64px 16px; }
+  margin: 64px 16px;
+}
 
 .legal-pad-background {
   background-color: #f8f5d7;
   background-image: linear-gradient(#e7e7e7 1px, transparent 1px), linear-gradient(90deg, #e7e7e7 1px, transparent 1px), linear-gradient(#e7e7e7, 1px, transparent 1px), linear-gradient(90deg, #e7e7e7 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px; }
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
 
 .u-uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .u-inline-block {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .wrapper {
-  padding: 20px 0; }
+  padding: 20px 0;
+}
 
 .content {
   max-width: 968px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 header {
   text-align: center;
-  position: relative; }
+  position: relative;
+}
 
 nav {
   height: 30px;
-  position: relative; }
+  position: relative;
+}
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  float: right; }
+  float: right;
+}
 
 nav li {
   padding: 0 15px;
-  display: inline-block;}
+  display: inline-block;
+}
 
 a {
   color: #000;
   text-decoration: none;
-  background-image: linear-gradient(-100deg, #fff, #fff, #fff); }
-  a:hover {
-    background-image: linear-gradient(-100deg, #f8e71c, #f8e71c, #f8e71c); }
+  background-image: linear-gradient(-100deg, #fff, #fff, #fff);
+}
+a:hover {
+  background-image: linear-gradient(-100deg, #f8e71c, #f8e71c, #f8e71c);
+}
 
 li:nth-child(4n + 1) a, a:nth-child(4n + 1) {
-  border-radius: 20px 5px 30px 10px; }
+  border-radius: 20px 5px 30px 10px;
+}
 
 li:nth-child(4n + 2) a, a:nth-child(4n + 2) {
-  border-radius: 50px 3px 20px 8px; }
+  border-radius: 50px 3px 20px 8px;
+}
 
 li:nth-child(4n + 3) a {
-  border-radius: 10px 35px 10px 20px; }
+  border-radius: 10px 35px 10px 20px;
+}
 
 li:nth-child(4n + 4) a {
-  border-radius: 35px 10px 50px 20px; }
+  border-radius: 35px 10px 50px 20px;
+}
 
 .date {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .scribble {
-  position: absolute; }
+  position: absolute;
+}
 
 .scribble--form {
   position: absolute;
-  transform: translateX(-8px); }
+  transform: translateX(-8px);
+}
 
 .scribble--coc {
   position: absolute;
-  transform: translateX(-16px); }
+  transform: translateX(-16px);
+}
 
 .button {
   border: solid 3px #000;
@@ -130,44 +157,46 @@ li:nth-child(4n + 4) a {
   font-size: 1.5rem;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   font-family: inherit;
-  margin-top: 8px;}
-  .button:hover {
-    cursor: pointer; }
+  margin-top: 8px;
+}
+.button:hover {
+  cursor: pointer;
+}
 
 input {
   border: none;
   border-bottom: solid 3px #000;
   background: transparent;
   padding: 5px;
-  width: 400px;
+  width: 50%;
   font-family: inherit;
-  font-size: 1em; }
-  input::placeholder {
-    text-transform: uppercase; }
-    
+  font-size: 1em;
+}
+input::placeholder {
+  text-transform: uppercase;
+}
+
 @media (max-width: 420px) {
   h1 {
     font-size: 6em;
   }
-  
+
   nav ul {
     margin-bottom: 32px;
   }
-  
+
   nav li {
     text-align: right;
     display: block;
     margin-bottom: 8px;
   }
+
   input {
     width: 270px;
   }
 }
-
 @media (max-width: 320px) {
   h1 {
     font-size: 5em;
   }
 }
-
-/*# sourceMappingURL=empire2018.css.map */
