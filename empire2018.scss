@@ -184,7 +184,7 @@ li:nth-child(4n + 4) a {
   }
 }
 
-input {
+input:not(.button) {
   border: none;
   border-bottom: solid 3px $black;
   background: transparent;
