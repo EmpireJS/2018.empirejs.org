@@ -150,6 +150,11 @@ li:nth-child(4n + 4) a {
   transform: translateX(-16px);
 }
 
+.scribble--speak {
+  position: absolute;
+  transform: translateX(-28px);
+}
+
 .button {
   border: solid 3px #000;
   background: transparent;
@@ -174,6 +179,10 @@ input {
 }
 input::placeholder {
   text-transform: uppercase;
+}
+
+ul {
+  line-height: 1.5em;
 }
 
 @media (max-width: 420px) {
