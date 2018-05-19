@@ -196,10 +196,25 @@
       }
     }
     window.addEventListener('keydown', onFirstTab);
+    
+    var mapsLoaded = false;
+    var configLoaded = false;
+    function mapsDidLoad() {
+      mapsLoaded = true;
+      if (configLoaded) initMap();
+    }
+    function configDidLoad() {
+      configLoaded = true;
+      if (mapsLoaded) initMap();
+    }
+    function mapsFailed() {
+      document.getElementById('map').setAttribute('hidden', true);
+      console.error('Maps failed to load');
+    }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2tgQiSOli6RGV60I9tZyw-hH2nDtwbFQ&callback=initMap" type="text/javascript"></script>
-  <script src="map.js"></script>
-  <script src="scribbler.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2tgQiSOli6RGV60I9tZyw-hH2nDtwbFQ&callback=mapsDidLoad" type="text/javascript" onerror="mapsFailed()"></script>
+  <script async src="map.js"></script>
+  <script async src="scribbler.js"></script>
 </body>
 
 </html>
