@@ -75,6 +75,10 @@ form {
   margin: 64px 16px;
 }
 
+.text-section.speak-blurb {
+  text-align: center;
+}
+
 .legal-pad-background {
   background-color: $light-yellow;
   background-image:
@@ -134,7 +138,7 @@ a {
   }
 }
 
-li:nth-child(4n + 1) a,  a:nth-child(4n + 1) {
+li:nth-child(4n + 1) a,  a:nth-child(4n + 1):not(.button) {
   border-radius: 20px 5px 30px 10px;
 }
 li:nth-child(4n + 2) a, a:nth-child(4n + 2) {

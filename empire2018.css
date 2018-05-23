@@ -61,6 +61,10 @@ form {
   margin: 64px 16px;
 }
 
+.text-section.speak-blurb {
+  text-align: center;
+}
+
 .legal-pad-background {
   background-color: #f8f5d7;
   background-image: linear-gradient(#e7e7e7 1px, transparent 1px), linear-gradient(90deg, #e7e7e7 1px, transparent 1px), linear-gradient(#e7e7e7, 1px, transparent 1px), linear-gradient(90deg, #e7e7e7 1px, transparent 1px);
@@ -116,7 +120,7 @@ a:hover {
   background-image: linear-gradient(-100deg, #f8e71c, #f8e71c, #f8e71c);
 }
 
-li:nth-child(4n + 1) a, a:nth-child(4n + 1) {
+li:nth-child(4n + 1) a, a:nth-child(4n + 1):not(.button) {
   border-radius: 20px 5px 30px 10px;
 }
 
