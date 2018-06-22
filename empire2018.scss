@@ -39,7 +39,7 @@ h1 {
   margin-bottom: 36px;
   margin-left: 16px;
   margin-right: 16px;
-  
+
   span {
     display: inline-block;
   }
@@ -52,7 +52,7 @@ h2 {
   font-size: 2em;
   text-align: center;
   position: relative;
-  
+
   span {
     position: relative;
   }
@@ -75,7 +75,7 @@ form {
   margin: 64px 16px;
 }
 
-.text-section.speak-blurb {
+.ticket-button-section {
   text-align: center;
 }
 
@@ -188,6 +188,12 @@ li:nth-child(4n + 4) a {
   }
 }
 
+.button--big {
+  font-size: 2em;
+  background: $yellow;
+  box-shadow: 1em 10px $blue, -10px -1em $pink;
+}
+
 input:not(.button) {
   border: none;
   border-bottom: solid 3px $black;
@@ -210,11 +216,11 @@ ul {
   h1 {
     font-size: 6em;
   }
-  
+
   nav ul {
     margin-bottom: 32px;
   }
-  
+
   nav li {
     text-align: right;
     display: block;
