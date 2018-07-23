@@ -1,3 +1,5 @@
+import deburr from 'lodash.deburr';
+
 (function () {
   const scribbleMap = [];
   let headerWidth = window.innerWidth;
@@ -29,5 +31,40 @@
     window.requestAnimationFrame(redisplaceScribbles);
   });
 
+  const speakers = [
+    'Sam Richard',
+    'Nick Kreeger',
+    'Nishat Anjum',
+    'Andrey Sitnik',
+    'Mari Miyachi',
+    'Holger Bartel',
+    'Eli Schütze Ramírez',
+    'Jessica Jordan',
+    'Tracy Lum',
+    'Nitya Narasimhan',
+    'Jenn Creighton',
+    'Kelly Sutton',
+    'Meara Charnetzki',
+    'Sher Minn Chong',
+    'Ryan Waskiewicz',
+    'Joe Kent',
+    'Sarbbottam Bandyopadhyay',
+    'Sarah Groff Hennigh-Palermo',
+    'Kassandra Perch',
+    'K. Adam White',
+    'Ethan Garofolo',
+    'Lena Reinhard',
+    'Mani Nilchiani',
+    'Aaron Petcoff'
+  ];
 
+  const speakersHtml = speakers.map((speaker) => {
+    var imgUrl = `speaker-photos/${deburr(speaker).replace(/\./g, '').split(' ').join('_')}.jpg`;
+    return `<li class="speaker-box">
+      <img class="speaker-photo" alt="Image of ${speaker}" src="${imgUrl}" />
+      <p class="speaker-name">${speaker}</p>
+    </li>`
+  });
+
+  document.querySelector('.speakers-list').innerHTML = speakersHtml.join('');
 })();
