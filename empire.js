@@ -37,6 +37,7 @@ import deburr from 'lodash.deburr';
     'Nishat Anjum',
     'Andrey Sitnik',
     'Mari Miyachi',
+    'Sam Keller',
     'Holger Bartel',
     'Eli Schütze Ramírez',
     'Jessica Jordan',
