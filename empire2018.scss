@@ -174,6 +174,10 @@ li:nth-child(4n + 4) a {
   transform: translateX(-12px) translateY(-24px);
 }
 
+.scribble--hotel {
+  position: absolute;
+}
+
 .button {
   border: solid 3px $black;
   background: transparent;
