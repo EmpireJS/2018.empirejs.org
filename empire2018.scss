@@ -319,10 +319,9 @@ ul {
 }
 
 .schedule-session {
-  padding: 1rem 2rem 1rem 7rem;
-  margin-left: 4rem;
   position: relative;
   min-height: 160px;
+  display: flex;
   // @include media-query(palm) {
   //   border-left: none;
   //   padding-left: 1rem;
@@ -330,7 +329,7 @@ ul {
   // }
 }
 
-.schedule-session > .schedule-speaker__name {
+.schedule-session .schedule-speaker__name {
   margin-bottom: 1rem;
   text-transform: none;
   color: $blue;
@@ -342,13 +341,15 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-.schedule-session > .schedule-speaker__photo {
+.schedule-session .schedule-speaker__photo {
+  margin-right: 40px;
+  margin-top: 25px;
+  margin-left: 25px;
   width: 8rem;
+  height: 8rem;
   border-radius: 4rem;
   box-shadow: 1em 10px $yellow, -10px -1em $blue;
-  position: absolute;
-  top: 30px;
-  left: -3rem;
+
   // @include media-query(palm) {
   //   display: none;
   // }
