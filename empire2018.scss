@@ -187,6 +187,11 @@ li:nth-child(4n + 4) a {
   position: absolute;
 }
 
+.scribble--scholarship {
+  position: absolute;
+  transform: translateY(10px);
+}
+
 .button {
   border: solid 3px $black;
   background: transparent;
