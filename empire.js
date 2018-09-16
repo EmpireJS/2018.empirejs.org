@@ -59,13 +59,17 @@ import deburr from 'lodash.deburr';
     'Aaron Petcoff'
   ];
 
-  const speakersHtml = speakers.map((speaker) => {
-    var imgUrl = `speaker-photos/${deburr(speaker).replace(/\./g, '').split(' ').join('_')}.jpg`;
-    return `<li class="speaker-box">
-      <img class="speaker-photo" alt="Image of ${speaker}" src="${imgUrl}" />
-      <p class="speaker-name">${speaker}</p>
-    </li>`
-  });
-
-  document.querySelector('.speakers-list').innerHTML = speakersHtml.join('');
+  const speakersList = document.querySelector('.speakers-list');
+  
+  if (speakersList) {
+    const speakersHtml = speakers.map((speaker) => {
+      var imgUrl = `speaker-photos/${deburr(speaker).replace(/\./g, '').split(' ').join('_')}.jpg`;
+      return `<li class="speaker-box">
+        <img class="speaker-photo" alt="Image of ${speaker}" src="${imgUrl}" />
+        <p class="speaker-name">${speaker}</p>
+      </li>`
+    });
+  
+    speakersList.innerHTML = speakersHtml.join('');
+  }
 })();
