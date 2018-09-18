@@ -353,6 +353,22 @@ ul {
   box-shadow: 1em 10px $yellow, -10px -1em $blue;
 }
 
+.glossary li {
+  list-style: none;
+}
+
+.glossary-talk {
+  margin-bottom: 4em;
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
 
 @media (max-width: 420px) {
   h1 {
