@@ -18,6 +18,7 @@
     "uglifyify": "^3.0.4"
   },
   "dependencies": {
-    "lodash.deburr": "^4.1.0"
+    "lodash.deburr": "^4.1.0",
+    "lodash.shuffle": "^4.2.0"
   }
 }
