@@ -1,4 +1,5 @@
 import deburr from 'lodash.deburr';
+import shuffle from 'lodash.shuffle';
 
 (function () {
   const scribbleMap = [];
@@ -34,6 +35,7 @@ import deburr from 'lodash.deburr';
   const speakers = [
     'Sam Richard',
     'Nick Kreeger',
+    'Yannick Assogba',
     'Nishat Anjum',
     'Andrey Sitnik',
     'Mari Miyachi',
@@ -62,7 +64,7 @@ import deburr from 'lodash.deburr';
   const speakersList = document.querySelector('.speakers-list');
   
   if (speakersList) {
-    const speakersHtml = speakers.map((speaker) => {
+    const speakersHtml = shuffle(speakers).map((speaker) => {
       var imgUrl = `speaker-photos/${deburr(speaker).replace(/\./g, '').split(' ').join('_')}.jpg`;
       return `<li class="speaker-box">
         <img class="speaker-photo" alt="Image of ${speaker}" src="${imgUrl}" />
