@@ -217,7 +217,8 @@ li:nth-child(4n + 4) a {
   }
 }
 
-.speakers-list, .sponsors-list {
+.speakers-list,
+.sponsors-list {
   padding-left: 0;
   padding-bottom: 20px;
   display: flex;
@@ -225,13 +226,15 @@ li:nth-child(4n + 4) a {
   flex-wrap: wrap;
 }
 
-.speaker-box, .sponsor-box {
+.speaker-box,
+.sponsor-box {
   flex: 1;
   width: 33%;
   list-style: none;
 }
 
-.speaker-photo, .sponsor-logo {
+.speaker-photo,
+.sponsor-logo {
   width: 275px;
   box-sizing: border-box;
 }
@@ -264,8 +267,16 @@ ul {
   line-height: 1.5em;
 }
 
+.sponsors-list a {
+  background-image: none;
+  &:hover {
+    background-image: none;
+  }
+}
+
 .sponsor-logo {
   background: $white;
+  margin-top: 10px;
 }
 
 .add-padding {
@@ -302,7 +313,7 @@ ul {
   }
   &::before {
     border: none;
-    content: '';
+    content: "";
     display: inline-block;
     height: 0;
     width: 0;
@@ -375,7 +386,6 @@ ul {
   }
 }
 
-
 @media (max-width: 420px) {
   h1 {
     font-size: 6em;
@@ -408,11 +418,13 @@ ul {
     width: 90%;
   }
 
-  .speakers-list, .sponsors-list {
+  .speakers-list,
+  .sponsors-list {
     display: block;
   }
 
-  .speaker-box, .sponsor-box {
+  .speaker-box,
+  .sponsor-box {
     width: 100%;
   }
 
