@@ -84,14 +84,18 @@ form {
   margin: 64px 16px;
 }
 
-.ticket-button-section {
+.ticket-button-section,
+.vote-button-section {
   text-align: center;
+}
+
+.vote-button-section h2 {
+  margin-bottom: 80px;
 }
 
 .legal-pad-background {
   background-color: $light-yellow;
-  background-image:
-    linear-gradient($grid-color 1px, transparent 1px),
+  background-image: linear-gradient($grid-color 1px, transparent 1px),
     linear-gradient(90deg, $grid-color 1px, transparent 1px),
     linear-gradient($grid-color, 1px, transparent 1px),
     linear-gradient(90deg, $grid-color 1px, transparent 1px);
@@ -122,8 +126,8 @@ header {
 }
 
 nav {
-    height: 30px;
-    position: relative;
+  height: 30px;
+  position: relative;
 }
 
 nav ul {
@@ -147,10 +151,12 @@ a {
   }
 }
 
-li:nth-child(4n + 1) a,  a:nth-child(4n + 1):not(.button) {
+li:nth-child(4n + 1) a,
+a:nth-child(4n + 1):not(.button) {
   border-radius: 20px 5px 30px 10px;
 }
-li:nth-child(4n + 2) a, a:nth-child(4n + 2) {
+li:nth-child(4n + 2) a,
+a:nth-child(4n + 2):not(.button) {
   border-radius: 50px 3px 20px 8px;
 }
 li:nth-child(4n + 3) a {
