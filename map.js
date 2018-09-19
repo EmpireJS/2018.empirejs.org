@@ -5,7 +5,7 @@ function initMap() {
       return;
     }
 
-    var latLng = new google.maps.LatLng(40.7686084, -73.967244);
+    var latLng = new google.maps.LatLng(40.7685241, -73.9642346);
     var styles = [
       {
         "elementType": "geometry",
